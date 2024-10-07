@@ -48,6 +48,7 @@ input "1267:12440:ELAN1201:00_04F3:3098_Touchpad" {
 
     bindsym $mod+d exec $menu
     bindsym $mod+c exec wofi-emoji
+    bindsym $mod+p exec XDG_CURRENT_DESKTOP=sway flameshot gui
 
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
@@ -162,6 +163,7 @@ bindsym $mod+r mode "resize"
 ### Startup Applications
 
 exec waybar
+exec flameshot
 
 ### Theming
 
