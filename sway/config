@@ -22,7 +22,8 @@ set $menu wofi --show drun
 
 ### Wallpaper
 
-output * bg /home/user/wallpapers/Stimulating/city.jpg fill
+#output * bg /home/user/wallpapers/Stimulating/city.jpg fill
+output * bg /home/user/wallpapers/Stimulating/GZstuciaAAMrpWP.jpg fill
 
 
 ### Input configuration
@@ -30,6 +31,7 @@ output * bg /home/user/wallpapers/Stimulating/city.jpg fill
 
 input type:touchpad {
     accel_profile flat
+    dwt disabled
 }
 
 input "1267:12440:ELAN1201:00_04F3:3098_Touchpad" {
@@ -167,9 +169,10 @@ exec flameshot
 
 ### Theming
 
-for_window [class=".*"] opacity 0.95
-for_window [app_id="LibreWolf"] opacity 0.80
+for_window [class=".*"] opacity 0.93
+for_window [app_id="LibreWolf"] opacity 0.85
 for_window [title="Parent process Browser Toolbox"] opacity 0.90
+
 
 #                        border  bg      text   
 client.focused           #9aa5ce #0a0e14 #c0caf5 #9aa5ce   #9aa5ce
