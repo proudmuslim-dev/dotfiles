@@ -6,7 +6,6 @@ set default-fg '#a8a8a8'
 set recolor-lightcolor '#11171d'
 set recolor-darkcolor '#a8a8a8'
 
-#set font "SFMono Nerd Font Mono normal 12"
 set font "Fantasque Sans Mono normal 12"
 
 set inputbar-bg '#11171d'

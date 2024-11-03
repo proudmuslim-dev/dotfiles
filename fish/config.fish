@@ -1,7 +1,10 @@
 export MANPAGER='nvim +Man!'
 export EDITOR=nvim
-export QT_STYLE_OVERRIDE=kvantum
+
 export MAKEFLAGS=j16
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+export QT_STYLE_OVERRIDE=kvantum
 
 alias info 'info --vi-keys'
 alias lynx 'lynx -vikeys'
