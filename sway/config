@@ -23,7 +23,8 @@ set $menu wofi --show drun
 ### Wallpaper
 
 #output * bg /home/user/wallpapers/Stimulating/city.jpg fill
-output * bg /home/user/wallpapers/Stimulating/GZstuciaAAMrpWP.jpg fill
+#output * bg /home/user/wallpapers/Stimulating/GZstuciaAAMrpWP.jpg fill
+output * bg /home/user/wallpapers/Stimulating/GcWzCIZXoAAmKOd.jpg fill
 
 
 ### Input configuration
@@ -59,6 +60,14 @@ input "1267:12440:ELAN1201:00_04F3:3098_Touchpad" {
     bindsym $mod+Shift+c reload
 
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+#
+# Opacity :
+#
+
+    bindsym $mod+Shift+bracketright opacity plus .05
+    bindsym $mod+Shift+bracketleft opacity minus .05
+
 #
 # Moving around:
 #
@@ -147,10 +156,10 @@ input "1267:12440:ELAN1201:00_04F3:3098_Touchpad" {
 # Resizing containers:
 #
 mode "resize" {
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    bindsym $left resize shrink width 1px
+    bindsym $down resize grow height 1px
+    bindsym $up resize shrink height 1px
+    bindsym $right resize grow width 1px
 
     bindsym Left resize shrink width 10px
     bindsym Down resize grow height 10px
@@ -171,6 +180,7 @@ exec flameshot
 
 for_window [class=".*"] opacity 0.93
 for_window [app_id="LibreWolf"] opacity 0.85
+for_window [app_id="Mullvad Browser Alpha"] opacity 0.85
 for_window [title="Parent process Browser Toolbox"] opacity 0.90
 
 
